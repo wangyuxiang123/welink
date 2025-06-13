@@ -37,8 +37,8 @@ jobs:
         run: pip install -r ./requirements.txt
       - name: 'Working'
         env:
-          USER: ${{secrets.deviceId}}
-          INFO: ${{secrets.openId}}
+          USER: ${{secrets.DEVICEID}}
+          INFO: ${{secrets.OPENID}}
         run: |
           python -m pip install --upgrade pip
           python main.py

@@ -50,7 +50,7 @@ class Do:
 
 
 if __name__ == '__main__':
-    deviceId = os.environ.get('deviceId', '')
-    openId = os.environ.get('openId', '')
+    deviceId = os.environ.get('DEVICEID', '')
+    openId = os.environ.get('OPENID', '')
     uses = Do()
     uses.punch(deviceId, openId)
